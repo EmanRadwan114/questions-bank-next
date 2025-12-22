@@ -32,7 +32,7 @@ const Form: React.FC = () => {
   return (
     <div className="bg-neutral-50 dark:bg-neutral-800 p-5 rounded-sm shadow-lg shadow-neutral-300 dark:shadow-neutral-900 flex flex-col gap-5">
       <h1 className="font-bold capitalize text-xl md:text-3xl text-center">
-        Write down your notes
+        Write down your questions
       </h1>
       {/* fields */}
       <div className="flex flex-col gap-2">
