@@ -70,7 +70,7 @@ const Question: React.FC<IProps> = ({
         </h2>
         <Chevron
           className={`text-foreground size-5 transition-transform duration-300 ${
-            isQuestionSelected && "text-neutral-50 rotate-360"
+            isQuestionSelected && "text-neutral-50 rotate-180"
           }`}
         />
       </div>
