@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 interface IProps {
   question: IQuestion;
   selectedQuestion: IQuestion | null;
-  onSetSelectedQuestion: (param: () => IQuestion | null) => void;
+  onSetSelectedQuestion: (question: IQuestion | null) => void;
 }
 
 const Question: React.FC<IProps> = ({
@@ -26,7 +26,7 @@ const Question: React.FC<IProps> = ({
   );
 
   useEffect(() => {
-    onSetSelectedQuestion(() => (questions.length ? questions[0] : null));
+    onSetSelectedQuestion(questions.length ? questions[0] : null);
   }, []);
 
   //———————————————————————————————— handlers ————————————————————————————————
