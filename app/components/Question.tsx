@@ -8,9 +8,7 @@ import { useQusetionsContext } from "../contexts/QuestionsContext";
 import { toast } from "react-toastify";
 import EditIcon from "./icons/EditIcon";
 import DeleteIcon from "./icons/DeleteIcon";
-import Modal from "./ui/Modal";
 import EditModal from "./EditModal";
-import { close } from "node:inspector/promises";
 
 interface IProps {
   question: IQuestion;
